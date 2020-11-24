@@ -27,6 +27,9 @@ public class Ventana extends JFrame {
             Random ran=new Random();
             int p=ran.nextInt(primos.size());
             int q=ran.nextInt(primos.size());
+            while (q==p){
+                q=ran.nextInt(primos.size());
+            }
             rsa=new RSA(primos.get(p),primos.get(q));
             System.out.println(rsa.n);
             System.out.println(rsa.e);
