@@ -106,6 +106,10 @@ public class Ventana extends JFrame {
         @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
+            g.drawString("Llaves:",380,100);
+            g.drawString("n: "+rsa.n,380,120);
+            g.drawString("e: "+rsa.e,380,140);
+            g.drawString("d: "+rsa.d,380,160);
             g.setFont(new Font("Arial",Font.PLAIN,20));
             g.drawString("Alice",100,50);
             g.drawString("Bob",500,50);
